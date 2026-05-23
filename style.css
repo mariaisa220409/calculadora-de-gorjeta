@@ -73,7 +73,8 @@ main {
     color: var(--green-300);   
 }
 
-.Conta:has(input:focus) div {
+.Conta:has(input:focus) div 
+.pessoas:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
 
@@ -105,4 +106,10 @@ main {
 .gorjeta #outra::placeholder {
     color: var(--green-300);
 }
+
+.pessoas #erro {
+    display: none;
+
+}
+
 
