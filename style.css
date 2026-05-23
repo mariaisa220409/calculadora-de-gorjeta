@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:"Space Mono", serif;
+    font-family:"Space Mono", sans-serif;
 }
 
 :root {
@@ -26,6 +26,7 @@ header {
     display: flex;
     justify-content: center;
     padding-block: 2.8rem;
+    align-items: center;
 }
 
 main {
@@ -75,7 +76,7 @@ main {
     color: var(--green-300);   
 }
 
-.Conta:has(input:focus) div 
+.Conta:has(input:focus) div,
 .pessoas:has(input:focus) div {
     outline: 2px solid var(--light-green);
 }
@@ -111,7 +112,6 @@ main {
 
 .pessoas #erro {
     display: none;
-
 }
 
 .resultados {
@@ -120,7 +120,7 @@ main {
     padding: 1.5rem;
 }
 
-.resultados div {
+.resultados div div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -162,4 +162,14 @@ main {
     padding-block: 0.5rem;
 }
 
+@media(min-width: 920px) {
+    main {
+        display: flex;
+        gap: 3rem;
+    }
+
+    main section {
+        width: 100%;
+    }
+}
 
